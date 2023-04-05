@@ -1,4 +1,4 @@
-:root {
+ :root {
   --blue: #4e73df;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -4001,6 +4001,7 @@ input[type=submit].btn-block {
 .custom-control-input[disabled]~.custom-control-label {
   color: #858796
 }
+
 .custom-control-input:disabled~.custom-control-label::before,
 .custom-control-input[disabled]~.custom-control-label::before {
   background-color: #eaecf4
@@ -11085,6 +11086,7 @@ a:focus {
   -webkit-animation-timing-function: opacity cubic-bezier(0, 1, .4, 1);
   animation-timing-function: opacity cubic-bezier(0, 1, .4, 1)
 }
+
 .bg-gradient-primary {
   background-color: #4e73df;
   background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
@@ -12595,4 +12597,3 @@ footer.sticky-footer .copyright {
 body.sidebar-toggled footer.sticky-footer {
   width: 100%
 }
-

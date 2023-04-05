@@ -1,29 +1,8 @@
 import React from 'react'
 
-function BasicCard(props) {
+function Progresscard({value=100,icon='fa-comments',cardBorder='danger'}) {
   return <>
-  <div className="col-xl-3 col-md-6 mb-4">
-        <div className={`card border-left-${props.data.cardBorder} shadow h-100 py-2`}>
-            <div className="card-body">
-                <div className="row no-gutters align-items-center">
-                    <div className="col mr-2">
-                        <div className="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                            Earnings (Monthly)</div>
-                        <div className="h5 mb-0 font-weight-bold text-gray-800">${props.data.value}</div>
-                    </div>
-                    <div className="col-auto">
-                        <i className={`fas ${props.data.icon}  fa-2x text-gray-300`}></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-  </>
-}
-
-export function ProgressCard({value=100,icon='fa-comments',cardBorder='danger'}){
-    return <>
-     <div className="col-xl-3 col-md-6 mb-4">
+    <div className="col-xl-3 col-md-6 mb-4">
                   <div className={`card border-left-${cardBorder} shadow h-100 py-2`}>
                       <div className="card-body">
                           <div className="row no-gutters align-items-center">
@@ -51,6 +30,7 @@ export function ProgressCard({value=100,icon='fa-comments',cardBorder='danger'})
                       </div>
                   </div>
               </div>
-    </>
+  </>
 }
-export default BasicCard
+
+export default Progresscard
